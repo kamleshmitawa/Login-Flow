@@ -13,10 +13,13 @@ class Home extends Component {
           </TouchableOpacity>
         </View>
         <View>
-          <MapView />
+          <TouchableOpacity onPress={() => this.props.onLogout()} style={{ backgroundColor: '#00ff00', borderWidth: 2 }}>
+            <Text> Logout</Text>
+          </TouchableOpacity>
         </View>
+        
         <View>
-          <Text> Home</Text>
+          <MapView />
         </View>
       </View>
     )
